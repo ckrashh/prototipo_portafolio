@@ -1,0 +1,28 @@
+h2 {
+    color: #64acff; /* Celeste para títulos */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #0A192F;
+    color: #FFFFFF;
+}
+
+/* Animación personalizada para desvanecer */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Clase para ocultar con transición */
+.collapsing {
+    transition: height 0.35s ease;
+}
