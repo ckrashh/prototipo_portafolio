@@ -26,3 +26,9 @@ body {
 .collapsing {
     transition: height 0.35s ease;
 }
+
+.card-img-top {
+  height: 18rem; /* O el tamaño que necesites */
+  width: 100%;
+  object-fit: cover;
+}

@@ -19,12 +19,10 @@ function agregarProyecto(titulo, descripcion, imagen, link) {
 let currentIndex = 3;
 let showingAll = false;
 function proyect(){
-    agregarProyecto("Proyecto 1", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
-    agregarProyecto("Proyecto 2", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
-    agregarProyecto("Proyecto 3", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
-    agregarProyecto("Proyecto 4", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
-    agregarProyecto("Proyecto 5", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
-    agregarProyecto("Proyecto 6", "VA TODA LA DESCRIPCION DEL PROYECTO", "proyecto1.jpg", "index.html");
+    agregarProyecto("Cafeteria en django", "Proyecto de una pagina para una cafeteria echa en django y bootstrap con logeo y CRUD correspondiente para administradores", "cafeteria.jpg", "https://github.com/ckrashh/cafeteria_django");
+    agregarProyecto("Curva de aprendizaje", "Toda mi curva de aprendizaje en python y POO", "aprendizaje.png", "https://github.com/ckrashh/Full_Stack_Python");
+    agregarProyecto("Bibloteca en python", "Proyecto de una biblioteca echa en python y POO sin interfaz grafica, en el cual tiene consistencia de datos y manejo de archivos", "bibloteca.png", "https://github.com/ckrashh/Evaluacion_Modulo4_python_Avanzado");
+    agregarProyecto("CRUD De productos en django", "Proyecto de evaluacion de modulo Django-avanzado del bootcamp FullStack Python de Talento digital", "proyecto1.jpg", "https://github.com/ckrashh/Crud_productos_django");
 
     mostrarDatos(currentIndex);
 };
@@ -39,13 +37,13 @@ function mostrarDatos(hasta){
                         '<h2>'+listProyectos[proyecto].titulo+'</h2>'+
                     '</div>'+
                     '<div class="card-body text-info" alt="imagen de '+listProyectos[proyecto].titulo+'">'+
-                        '<a href="index.html"> '+
+                        '<a href="'+listProyectos[proyecto].link+'"> '+
                         '<img  src="assets/img/'+listProyectos[proyecto].imagen+'" class="card-img-top" alt="imagen del proyecto '+listProyectos[proyecto].titulo+'">'+
                         '</a>'+
                     '</div>'+
                     '<div class="card-footer text-end" alt="Botones para obtener mas informacion y link al proyecto '+listProyectos[proyecto].titulo+'">'+
-                        '<input type="button" value="Más Información" id="info'+listProyectos[proyecto].titulo+'" onClick="info(\''+listProyectos[proyecto].titulo+'\',\''+listProyectos[proyecto].descripcion+'\')"  class="btn btn-primary"> '+
-                        '<a href="'+listProyectos[proyecto].link+'" class="btn btn-primary">Ir al proyecto</a>'+
+                        '<input type="button" value="Más Información" id="info'+listProyectos[proyecto].titulo+'" onClick="info(\''+listProyectos[proyecto].titulo+'\',\''+listProyectos[proyecto].descripcion+'\')"  class="btn btn-outline-primary"> '+
+                        '<a href="'+listProyectos[proyecto].link+'" class="btn btn-outline-primary">Ir al proyecto <i class="bi bi-box-arrow-up-right ms-1"></i></a>'+
                     '</div>'+
                 '</div>'+
             '</div>'
