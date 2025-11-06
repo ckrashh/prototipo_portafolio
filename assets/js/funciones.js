@@ -16,13 +16,29 @@ function agregarProyecto(titulo, descripcion, imagen, link) {
     listProyectos.push(nuevoProyecto);
 }
 
+
+
 let currentIndex = 3;
 let showingAll = false;
 function proyect(){
-    agregarProyecto("Cafeteria en django", "Proyecto de una pagina para una cafeteria echa en django y bootstrap con logeo y CRUD correspondiente para administradores", "cafeteria.jpg", "https://github.com/ckrashh/cafeteria_django");
+    agregarProyecto("Cafetería Django", "Cafetería Django es una aplicación web desarrollada con el framework Django, diseñada para gestionar los procesos básicos de una cafetería, incluyendo la administración de productos, categorías y pedidos."+
+    "Este proyecto fue creado con fines educativos como parte de un proceso de aprendizaje en desarrollo web con Python y Django.", 
+    "cafeteria.jpg",  
+    "https://github.com/ckrashh/cafeteria_django");
+
+
     agregarProyecto("Curva de aprendizaje", "Toda mi curva de aprendizaje en python y POO", "aprendizaje.png", "https://github.com/ckrashh/Full_Stack_Python");
-    agregarProyecto("Bibloteca en python", "Proyecto de una biblioteca echa en python y POO sin interfaz grafica, en el cual tiene consistencia de datos y manejo de archivos", "bibloteca.png", "https://github.com/ckrashh/Evaluacion_Modulo4_python_Avanzado");
-    agregarProyecto("CRUD De productos en django", "Proyecto de evaluacion de modulo Django-avanzado del bootcamp FullStack Python de Talento digital", "proyecto1.jpg", "https://github.com/ckrashh/Crud_productos_django");
+
+    agregarProyecto("Bibloteca en python", 
+    "Este proyecto es la evaluación final del Módulo 4 del Bootcamp de Python Avanzado de Talento Digital. Implementa un sistema de gestión de bibliotecas simple basado en la Programación Orientada a Objetos (POO) en Python."+
+    " El programa permite a un usuario gestionar libros (físicos y digitales) a través de un menú interactivo, incluyendo funcionalidades como crear, eliminar, buscar y prestar/devolver libros, con persistencia de datos mediante un archivo de texto.", 
+    "bibloteca.png", 
+    "https://github.com/ckrashh/Evaluacion_Modulo4_python_Avanzado");
+
+    agregarProyecto("CRUD De productos en django", "Este proyecto es una aplicación web sencilla de gestión de productos desarrollada con Django, creada como parte de la evaluación del Módulo 7 del bootcamp de Python de Talento Digital."+
+    " Permite realizar operaciones básicas de CRUD (Crear, Leer, Actualizar, Eliminar) sobre un catálogo de productos.", 
+    "proyecto1.jpg", 
+    "https://github.com/ckrashh/Crud_productos_django");
 
     mostrarDatos(currentIndex);
 };
